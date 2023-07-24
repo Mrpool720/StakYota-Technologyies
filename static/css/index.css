@@ -1,0 +1,412 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body {
+    font-weight: bold;
+    font-style: normal;
+}
+
+#logoimg {
+    background-color: #000000;
+}
+
+#logoimg:hover {
+    background-color: #ffffff;
+}
+
+.parallaxBanner {
+    background: url(../images/tech-building1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+
+}
+
+/* Nav Menu CSS */
+.nav-menu {
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 24px;
+
+}
+
+.logo>img {
+    filter: drop-shadow(0px 0px 4px lightgray);
+}
+
+.nav-menu>a {
+    color: #000000;
+    padding: 10px 20px;
+    margin: 22px;
+    border-radius: 2px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2em;
+    border-radius: 4px;
+}
+
+.nav-menu>a:hover {
+    background-color: #000000;
+    color: #f1f4f8;
+}
+
+.menu-active {
+    background-color: #000000;
+    color: #f1f4f8 !important;
+}
+
+.nav-parent {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    display: flex;
+    padding: 0px 60px;
+    align-items: center;
+}
+
+/* Nav Menu CSS */
+
+/* Services Banner */
+.bannerParent {
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+}
+
+.bannerInner {
+    height: 600px;
+    color: #ffffff;
+    background: url(../images/home-banner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 105% 120%;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    perspective: 3000;
+}
+
+.bannerHeading,
+.bannerSubtext,
+.bannerLink {
+    transition: all 0.3s ease-in-out;
+}
+
+.bannerHeading {
+    font-size: 3em;
+}
+
+.bannerSubtext {
+    font-size: 1.25em;
+}
+
+.bannerLink>a {
+    color: black;
+    background-color: #ffffff;
+    padding: 8px 20px;
+    display: flex;
+    column-gap: 8px;
+    border-radius: 20px;
+}
+
+.bannerInner:hover {
+    transition: all 0.3s ease-in-out;
+    background-size: 100% 115%;
+}
+
+.bannerInner:hover .bannerHeading,
+.bannerInner:hover .bannerSubtext {
+    transition: all 0.3s ease-in-out;
+    transform: scale(105%, 115%);
+}
+
+/* Services Banner */
+
+/* Services Article */
+.servicesArticle {
+    background-color: #ffffff;
+    padding: 120px 0px;
+}
+
+/* Services Article */
+.p60 {
+    padding: 60px;
+    background-color: #ffffff;
+}
+
+/* Architecture Banner */
+
+.architecturBanner {
+    height: 400px;
+    position: relative;
+}
+
+.architectureBannerInfo {
+    width: 50vw;
+    padding: 48px;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    background: #ffffff;
+    border-top-left-radius: 4px;
+}
+
+.architectureBannerInfoHead {
+    font-size: 1.75em;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.architectureBannerInfoDesc {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.architectureBannerInfoLink>a {
+    width: max-content;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 8px 20px;
+    display: flex;
+    column-gap: 8px;
+    border-radius: 20px;
+}
+
+/* Architecture Banner */
+
+/* Services Explore */
+.articalIndividiual {
+    padding: 120px 0px;
+    background-color: #ffffff;
+}
+
+.serviceSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 40px 0px;
+}
+
+.articalIndividiualHead {
+    width: max-content;
+    margin: 0 auto;
+    font-size: 3em;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #000000;
+}
+
+.serviceSectionImg {
+    width: 160%;
+    overflow: hidden;
+}
+
+.serviceSectionImg>img {
+    width: 100%;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.serviceSectionImg>img:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(120%);
+}
+
+.serviceSectionText {
+    padding: 0px 48px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: calc(150% - 160px);
+    line-height: 25px;
+}
+
+.serviceSectionTextHead {
+    font-size: 1.75em;
+    font-weight: 600;
+}
+
+.serviceSectionTextInfo {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+/* Bottom Banner */
+.bottomBanner {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomBannerMessage {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.bottomBannerLink>a {
+    width: max-content;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 8px 20px;
+    display: flex;
+    column-gap: 8px;
+    border-radius: 20px;
+}
+
+/* Bottom Banner */
+
+/* Footer Banner */
+
+.footerBanner {
+    width: calc(100% - 160px);
+    position: relative;
+    bottom: 0%;
+    background-color: black;
+    padding: 80px 80px 0px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.footerBannerTopSection {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footerBanner a {
+    color: #ffffff;
+}
+
+.footerSocial {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.stakyota {
+    /* height: 50px; */
+    font-size: 1.7em;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.usefulLinks {
+    height: 50px;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: left;
+}
+
+.services {
+    height: 50px;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: left;
+}
+
+.social {
+    height: 50px;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.city {
+
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.state {
+
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    height: 50px;
+}
+
+.mobile,
+.email {
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    height: 25px;
+}
+
+.usefulLinks,
+.services {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footerBannerBottomSection {
+    color: darkgray;
+    border-top: 1px solid lightgray;
+    padding: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+/* Footer Banner */
+
+/* Media Query */
+@media only screen and (max-width:780px) {
+    .nav-menu {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .parallaxBanner {
+        width: 100vw;
+    }
+
+    .footerBannerTopSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
