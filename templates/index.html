@@ -26,7 +26,19 @@
                     <a class="nav-item" href="about.html">About Us</a>
                     <a class="nav-item" href="services.html">Services</a>
                     <a class="nav-item" href="team.html">Team</a>
-                    <a class="nav-item" href="contact.html">Contact Us</a>
+                    <a class="nav-item" href="contact.html" id="nav">Contact Us</a>
+                    <label for="switch">
+                        <input type="checkbox" id="switch" class="switch">
+                        <label for="switch"></label>
+              </label>
+              <script>
+              const $html = document.querySelector("html");
+                  const $checkbox = document.querySelector("#switch");
+                  
+                  $checkbox.addEventListener("change", function() {
+                      $html.classList.toggle("light-mode");
+                  });</script>
+          
                 </div>
             </div>
 
@@ -111,7 +123,7 @@
             <!-- Bottom Banner showing parallax -->
             <div class="bottomBanner">
                 <div class="bottomBannerMessage">
-                    <img src="../static/images/my-Collaborate and Create.png" alt="">
+                    <img src="https://monophy.com/media/Tg70lIFvI9A098omQa/monophy.gif" alt="">
                     <div class="bottomBannerLink"><a href="team.html">Our Team <img
                                 src="../static/images/right-arrow.svg" width="20px" height="20px" alt=""></a></div>
                 </div>
@@ -119,7 +131,7 @@
 
             <!-- Footer Banner -->
             <div class="footerBanner">
-                <div class="footerBannerTopSection">
+                <div class="footerBannerTopSection my">
                     <div class="address">
                         <div class="stakyota">STAKYOTA TECHNOLOGIES</div>
                         <div class="city">Marathahalli, Bangalore, 560037</div>
@@ -129,27 +141,30 @@
                         <div class="email"> Email: stakyota@gmail.com</div>
                     </div>
 
-                    <div class="usefulLinks">
+                    <div class="usefulLinks my">
                         Useful Links
-                        <div><a href="index.html">Home</a></div>
-                        <div><a href="about.html">About</a></div>
-                        <div><a href="services.html">Services</a></div>
-                        <div><a href="team.html">Team</a></div>
-                        <div><a href="contact.html">Contact Us</a></div>
-                        <div><a href="careers.html">Careers</a></div>
+                        <div class="my"><a href="index.html" class="my">Home</a></div>
+                        <div class="my"><a href="about.html" class="my">About</a></div>
+                        <div class="my"><a href="services.html">Services</a></div>
+                        <div class="my"><a href="team.html"  class="my">Team</a></div>
+                        <div class="my"><a href="contact.html" class="my">Contact Us</a></div>
+                        <div class="my"><a href="careers.html" class="my">Careers</a></div>
                     </div>
+<br>
 
-                    <div class="services">
+<br>
+                    <div class="services my">
                         Services
-                        <div><a href="services.html?#webDesign">Web Design</a></div>
-                        <div><a href="services.html?#webDev">Web Development</a></div>
-                        <div><a href="services.html?#eComm">E-Commerce Solutions</a></div>
-                        <div><a href="services.html?#androidApp">Android Apps</a></div>
-                        <div><a href="services.html?#iosApp">IOS Apps</a></div>
+                        <div class="my"><a href="services.html?#webDesign" class="my">Web Design</a></div>
+                        <div class="my"><a href="services.html?#webDev" class="my">Web Development</a></div>
+                        <div class="my"><a href="services.html?#eComm" class="my">E-Commerce Solutions</a></div>
+                        <div class="my"><a href="services.html?#androidApp"   class="my">Android Apps</a></div>
+                        <div class="my"><a href="services.html?#iosApp" class="my">IOS Apps</a></div>
 
                     </div>
-
-                    <div class="footerSocial">
+<br>
+<br>
+                    <div class="footerSocial my">
                         <div class="social">Social Networks</div>
                         <div class="footerSocialLinks">
                             <a href="facebook"><img src="../static/images/facebook icon.svg"></a>
@@ -161,12 +176,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="footerBannerBottomSection">
-                    <div>Copyright © Stakyota 2023</div>
-                    <div class="separator">|</div>
-                    <div>All Rights Reserved</div>
-                    <div class="separator">|</div>
-                    <div>Designed by stakyota</div>
+                <div class="footerBannerBottomSection my">
+                    <div class="my"> Copyright © Stakyota 2023</div>
+                    <div class="separator my">|</div>
+                    <div class="my">All Rights Reserved</div>
+                    <div class="separator my-StakYota">|</div>
+                    <div class="my"> Designed by stakyota</div>
                 </div>
             </div>
         </div>
