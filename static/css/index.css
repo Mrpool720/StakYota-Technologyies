@@ -76,8 +76,8 @@ body {
 }
 
 .menu-active {
-    background-color: #000000;
-    color: #f1f4f8 !important;
+    background-color: #ffffff;
+    color: #010914 ;
 }
 
 .nav-parent {
@@ -309,7 +309,7 @@ body {
 }
 
 .footerBanner a {
-    color: #ffffff;
+    color: #037d77;
 }
 
 .footerSocial {
@@ -393,10 +393,33 @@ body {
 
 /* Media Query */
 @media only screen and (max-width:780px) {
+    body{
+        width: 700px;
+    }
     .nav-menu {
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+        flex-wrap: nowrap;
+        width: 700px;
+        margin-top: 50px;
+      margin-left: -280px;
+        margin-bottom: -100px;
+        background-color: #f1f4f8;
+    }
+    .nav-item{
+        font-size: 10px;
+        width: 700px;
+        background-color: #f1f4f8;
+        color: black;
+    }
+    .menu-active{
+        font-size: 10px;
+        width: 100px;
+        background-color: #f1f4f8;
+        color: black;
+    }
+    .logo{
+        width: 200px;
+        
     }
 
     .parallaxBanner {
@@ -410,3 +433,194 @@ body {
         align-items: center;
     }
 }
+@media only screen and (max-width:580px) {
+    body{
+        width: 580px;
+    }
+    .nav-menu {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 600px;
+        margin-top: 50px;
+      margin-left: -280px;
+        margin-bottom: -100px;
+        background-color: #f1f4f8;
+    }
+
+    .nav-item{
+        font-size: 10px;
+        width: 40px;
+        background-color: #f1f4f8;
+         background-size: cover;
+        color: black;
+    }
+    #nav{
+        margin-right: 20px;
+        padding-right: 20px;
+    }
+   
+    .nav-item:hover{
+        background-color: #f1f4f8;
+    }
+    .menu-active{
+        font-size: 10px;
+        background-size: cover;
+        background-color: #f1f4f8;
+        color: black;
+    }
+    .logo{
+        width: 200px;
+        
+    }
+
+    .parallaxBanner {
+        width: 50vw;
+    }
+    .bannerInner{
+        width: 100%;
+     
+    }
+    .bannerHeading{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .footerBannerTopSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+}
+:root {
+    --bg: rgb(137, 144, 158);
+    --bg-input: #141419;
+}
+
+
+:root{
+    --bg: linear-gradient(to bottom left, #c7f1f1 0%, #ffffff 100%);
+   
+    --bg-input: #e1e1ed;
+}
+
+
+/* light mode edited */
+
+.light-mode {
+    --bg: linear-gradient(to left, #2a2d30, #080a0c);
+    --bg-input: #fcf9f9;
+}
+
+ .main{
+    background: var(--bg);
+    color: var(--color-text);
+    /*font-weight: 500;
+    display: flex;*/
+}
+.architectureBannerInfo{
+    background: var(--bg);
+    color: var(--color-text);
+    color: rgb(16, 188, 203);
+    /*font-weight: 500;
+    display: flex;*/
+}
+.p60{
+    background: var(--bg);
+    color: var(--color-text);
+    color: rgb(16, 188, 203);
+    /*font-weight: 500;
+    display: flex;*/
+}
+article{
+    background: var(--bg);
+    color: var(--color-text);
+    color: rgb(16, 188, 203);
+    /*font-weight: 500;
+    display: flex;*/
+}
+.articalIndividiualHead{
+    background: var(--bg);
+    color: var(--color-text);
+    color:rgb(16, 188, 203);
+    /*font-weight: 500;
+    display: flex;*/
+}
+.serviceSection{
+    background: var(--bg);
+    color: var(--color-text);
+    color: rgb(16, 188, 203);
+    /*font-weight: 500;
+    display: flex;*/
+}
+.footerBanner{
+    background: var(--bg);
+    color: var(--color-text);
+    color: rgb(48, 210, 235);
+    /*font-weight: 500;
+    display: flex;*/
+}
+.my{
+    background: var(--bg);
+    color: var(--color-text);
+    color: rgb(5, 94, 108);
+    /*font-weight: 500;
+    display: flex;*/
+}
+
+.switch {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+
+.switch+label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.switch+label {
+    padding: 2px;
+    width: 52px;
+    height: 27px;
+    background-color: var(--color-border), rgba(23, 21, 21, 0.3);
+    border-radius: 100px;
+}
+
+.switch+label:before,
+.switch+label:after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
+}
+
+.switch+label:before {
+    right: 1px;
+    background-color: var(--bg-input);
+    border-radius: 60px;
+    transition: all 0.4s;
+}
+
+.switch+label:after {
+    width: 30px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+}
+
+.switch:checked+label:before {
+    background-color: #f3eff5;
+}
+
+.switch:checked+label:after {
+    transform: translateX(30px);
+}
+
